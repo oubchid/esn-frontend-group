@@ -1,0 +1,80 @@
+'use strict';
+
+angular.module('linagora.esn.group', [
+  'op.dynamicDirective',
+  'restangular',
+  'esn.router',
+  'esn.member',
+  'esn.http',
+  'esn.infinite-list',
+  'esn.core',
+  'esn.user',
+  'esn.async-action',
+  'esn.session',
+  'esn.attendee',
+  'esn.scroll',
+  'esn.ui',
+  'esn.i18n',
+  'esn.header'
+]);
+
+require('./app.constants');
+require('./app.run');
+
+require('esn-frontend-common-libs/src/frontend/js/modules/attendee/attendee.module');
+require('esn-frontend-common-libs/src/frontend/js/modules/http');
+require('esn-frontend-common-libs/src/frontend/js/modules/infinite-list/infinite-list.module');
+require('esn-frontend-common-libs/src/frontend/js/modules/core');
+require('esn-frontend-common-libs/src/frontend/js/modules/user/user.module');
+require('esn-frontend-common-libs/src/frontend/js/modules/session');
+require('esn-frontend-common-libs/src/frontend/js/modules/scroll');
+require('esn-frontend-common-libs/src/frontend/js/modules/ui');
+require('esn-frontend-common-libs/src/frontend/js/modules/header/header');
+require('esn-frontend-common-libs/src/frontend/js/modules/i18n/i18n.module');
+require('esn-frontend-common-libs/src/frontend/js/modules/lodash-wrapper');
+require('esn-frontend-common-libs/src/frontend/js/modules/async-action');
+require('esn-frontend-common-libs/src/frontend/js/modules/member');
+require('esn-frontend-common-libs/src/frontend/js/modules/esn.router');
+
+require('./admin/admin-groups-menu-item.component');
+require('./admin/admin-groups-subheader.component');
+require('./admin/admin-groups.component');
+require('./admin/admin.routes');
+require('./admin/admin.run');
+require('./attendee/group.attendee-provider.service');
+require('./common/selection/group-selection.service');
+require('./common/selection/group-selectable.directive');
+require('./common/selection/group-selection-hide-on-selecting.directive');
+require('./common/selection/group-selection-select-all.component');
+require('./common/selection/group-selection-select-all.controller');
+require('./common/group-api-client.service');
+require('./common/group-application-menu.directive');
+require('./common/group-member-resolver.service');
+require('./common/group-restangular.service');
+require('./common/group.service');
+require('./create/group-create.controller');
+require('./display/subheader/group-display-subheader.component');
+require('./display/group-display.component');
+require('./display/group-display.controller');
+require('./form/group-form.component');
+require('./form/group-form.controller');
+require('./list/item/group-list-item.component');
+require('./list/group-list-search.component');
+require('./list/group-list-search.controller');
+require('./list/group-list.component');
+require('./list/group-list.controller');
+require('./member/list/selection-header/group-member-list-selection-header.component');
+require('./member/list/selection-header/group-member-list-selection-header.controller');
+require('./member/list/group-member-list.component');
+require('./member/list/group-member-list.controller');
+require('./member/list-item/group-member-list-item.component');
+require('./member/list-item/group-member-list-item.component');
+require('./member/list-item-email/group-member-list-item-email.component');
+require('./member/list-item-group/group-member-list-item-group.component');
+require('./member/list-item-user/group-member-list-item-user.component');
+require('./member-auto-complete/validate-message/group-member-validate-message.component');
+require('./member-auto-complete/group-member-auto-complete.component');
+require('./member-auto-complete/group-member-auto-complete.controller');
+require('./subheader/group-subheader-back-button.component');
+require('./update/members/group-add-members.controller');
+require('./update/group-update.controller');

@@ -1,0 +1,12 @@
+.modal(tabindex="-1", role="dialog")
+  .modal-dialog
+    .modal-content
+      .modal-header
+        h4.modal-title {{ 'Delete mailing list?' | translate }}
+      .modal-body
+        | {{ 'Mailing list %s will be deleted and the email address of %s will be no longer available' | translate }}
+      .modal-footer
+        button.btn.btn-link(ng-click="$hide()")
+          | {{ 'Cancel' | translate }}
+        button.btn.btn-primary(ng-click="$ctrl.onDeleteBtnClick(); $hide()")
+          | {{ 'Delete' | translate }}

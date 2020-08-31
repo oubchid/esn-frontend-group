@@ -1,0 +1,12 @@
+.modal(tabindex="-1", role="dialog")
+  .modal-dialog
+    .modal-content
+      .modal-header
+        h4.modal-title {{ 'Remove members?' | translate }}
+      .modal-body
+        p {{ 'This action will remove %s selected members from current mailing list.' | translate }}
+      .modal-footer
+        button.btn.btn-link(ng-click="$hide()")
+          | {{ 'Cancel' | translate }}
+        button.btn.btn-primary(ng-click="$ctrl.removeSelectedMembers(); $hide()")
+          | {{ 'Remove' | translate }}
