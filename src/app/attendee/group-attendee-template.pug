@@ -1,0 +1,5 @@
+.row.auto-complete-match.group-attendee-template
+  .icon-svg(ng-include="'/group/images/group-icon.svg'")
+  .row
+    .col-xs-10.col-sm-11(ng-bind-html="$highlight(data.displayName)")
+    .col-xs-10.col-sm-11(ng-bind-html="$highlight(data.email)")

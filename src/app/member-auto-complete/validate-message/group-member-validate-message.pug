@@ -1,0 +1,5 @@
+.has-error(ng-switch='$ctrl.error')
+  .help-block(ng-switch-when='invalidEmail')
+    | {{ 'Invalid email' | translate }}
+  .help-block(ng-switch-when='existedMember')
+    | {{ 'Email is already used by a mailing list member' | translate }}
