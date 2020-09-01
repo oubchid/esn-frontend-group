@@ -20,6 +20,7 @@ angular.module('linagora.esn.group', [
 
 require('./app.constants');
 require('./app.run');
+require('./app.config');
 
 require('esn-frontend-common-libs/src/frontend/js/modules/attendee/attendee.module');
 require('esn-frontend-common-libs/src/frontend/js/modules/http');
