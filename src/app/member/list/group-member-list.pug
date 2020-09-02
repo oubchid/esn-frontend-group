@@ -5,7 +5,7 @@
     div(group-selection-hide-on-selecting)
       h2.title {{ 'Members' | translate }}
         span.hidden-md(ng-if="$ctrl.group.members.length") ({{$ctrl.elements.length}}/{{$ctrl.group.members.length}})
-        span.hidden-xs(ng-if="$ctrl.group.members.length") ({{ 'showing %s of %s' | translate }})
+        span.hidden-xs(ng-if="$ctrl.group.members.length") ({{ 'showing %s of %s' | translate:$ctrl }})
       button.btn.bgm-blue.btn-float.waves-effect(ng-click="$ctrl.onAddMembersBtnClick()")
         i.mdi.mdi-plus
   .card-body

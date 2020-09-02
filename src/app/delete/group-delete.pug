@@ -4,7 +4,7 @@
       .modal-header
         h4.modal-title {{ 'Delete mailing list?' | translate }}
       .modal-body
-        | {{ 'Mailing list %s will be deleted and the email address of %s will be no longer available' | translate }}
+        | {{ 'Mailing list %s will be deleted and the email address of %s will be no longer available' | translate:$ctrl }}
       .modal-footer
         button.btn.btn-link(ng-click="$hide()")
           | {{ 'Cancel' | translate }}
