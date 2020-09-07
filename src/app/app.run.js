@@ -20,4 +20,8 @@ function addTemplateCache($templateCache) {
     '/group/app/member/list/selection-header/modal/remove-members.html',
     require('./member/list/selection-header/modal/remove-members.pug')
   );
+  $templateCache.put(
+    '/group/app/update/members/group-add-members.html',
+    require('./update/members/group-add-members.pug')
+  );
 }
