@@ -20,4 +20,4 @@ function addTemplateCache($templateCache) {
     '/group/app/member/list/selection-header/modal/remove-members.html',
     require('./member/list/selection-header/modal/remove-members.pug')
   );
-};
+}

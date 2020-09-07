@@ -17,14 +17,14 @@ angular.module('esn.session', []);
 angular.module('esn.member', []);
 angular.module('esn.form.helper', []);
 angular.module('esn.i18n', ['pascalprecht.translate'])
-  .filter('esnI18n', function () {
-    return function (input) {
+  .filter('esnI18n', function() {
+    return function(input) {
       return input;
     };
   })
-  .factory('esnI18nService', function () {
+  .factory('esnI18nService', function() {
     return {
-      translate: function () {},
+      translate: function() {}
     };
   });
 angular.module('esn.http', [])
