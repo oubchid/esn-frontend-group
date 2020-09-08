@@ -29,7 +29,7 @@ describe('The groupMemberResolverService service', function() {
   }));
 
   it('should resolve with empty array when no group with given email', function(done) {
-    groupApiClient.getFromEmail.returns($q.when({data: []}));
+    groupApiClient.getFromEmail.returns($q.when({ data: [] }));
 
     groupMemberResolverService(email).then(function(result) {
       expect(result).to.be.an('array').that.is.empty;
@@ -45,8 +45,8 @@ describe('The groupMemberResolverService service', function() {
     var group = { id: 1 };
     var members = [1, 2, 3];
 
-    groupApiClient.getFromEmail.returns($q.when({data: [group]}));
-    groupApiClient.getAllMembers.returns($q.when({data: members}));
+    groupApiClient.getFromEmail.returns($q.when({ data: [group] }));
+    groupApiClient.getAllMembers.returns($q.when({ data: members }));
 
     groupMemberResolverService(email).then(function(result) {
       expect(result).to.deep.equal(members);

@@ -169,7 +169,7 @@ describe('The groupService', function() {
     });
 
     it('should call groupApiClient to add members', function() {
-      var group = { id: 123};
+      var group = { id: 123 };
       var members = [
         { id: 'example@email.com', objectType: 'email' }
       ];
@@ -253,7 +253,7 @@ describe('The groupService', function() {
 
     it('should call #getAttendeeCandidates with a list of ignored members', function(done) {
       var ignoreCandidates = [
-        { id: 'user1', objectType: 'user'},
+        { id: 'user1', objectType: 'user' },
         { id: 'user2', objectType: 'user' }
       ];
 
@@ -381,7 +381,7 @@ describe('The groupService', function() {
 
   describe('The isGroupMemberEmail function', function() {
     it('should return false if there is existing member of given email', function(done) {
-      groupApiClient.getMembers = sinon.stub().returns($q.when({ data: [{ objectType: 'user', id: '123'}] }));
+      groupApiClient.getMembers = sinon.stub().returns($q.when({ data: [{ objectType: 'user', id: '123' }] }));
 
       groupService.isGroupMemberEmail('groupId', 'email@exampl.com')
         .then(function(result) {

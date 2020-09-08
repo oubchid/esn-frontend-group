@@ -34,8 +34,8 @@ describe('The GroupAddMembersController', function() {
       controller.newMembers = [
         { id: 'userid', objectType: 'user' },
         { id: 'groupid', objectType: 'group' },
-        { email: 'contact@example.com', objectType: 'contact'},
-        { email: 'email@example.com'}
+        { email: 'contact@example.com', objectType: 'contact' },
+        { email: 'email@example.com' }
       ];
       groupService.addMembers = sinon.spy();
 
@@ -45,7 +45,7 @@ describe('The GroupAddMembersController', function() {
         { id: 'userid', objectType: 'user' },
         { id: 'groupid', objectType: 'group' },
         { id: 'contact@example.com', objectType: 'email' },
-        { id: 'email@example.com', objectType: 'email'}
+        { id: 'email@example.com', objectType: 'email' }
       ]);
     });
   });

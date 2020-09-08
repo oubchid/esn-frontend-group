@@ -5,4 +5,4 @@ angular.module('linagora.esn.group')
 
 function addTemplateCache($templateCache) {
   $templateCache.put('/group/images/group-icon.svg', require('../../images/group-icon.svg'));
-};
+}

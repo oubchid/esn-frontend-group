@@ -16,10 +16,15 @@ angular.module('esn.router', ['ui.router'])
 angular.module('esn.session', []);
 angular.module('esn.member', []);
 angular.module('esn.form.helper', []);
-angular.module('esn.i18n', [])
+angular.module('esn.i18n', ['pascalprecht.translate'])
+  .filter('esnI18n', function() {
+    return function(input) {
+      return input;
+    };
+  })
   .factory('esnI18nService', function() {
     return {
-      translate: angular.noop
+      translate: function() {}
     };
   });
 angular.module('esn.http', [])
