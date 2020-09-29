@@ -4,26 +4,23 @@ angular.module('linagora.esn.group', [
   'op.dynamicDirective',
   'restangular',
   'esn.router',
-  'esn.member',
   'esn.http',
   'esn.infinite-list',
   'esn.core',
   'esn.user',
   'esn.async-action',
   'esn.session',
-  'esn.attendee',
   'esn.scroll',
   'esn.ui',
   'esn.i18n',
-  'esn.header'
+  'esn.header',
+  'esn.group.libs'
 ]);
 
 require('./app.constants');
 require('./app.run');
 require('./app.config');
 
-require('esn-frontend-common-libs/src/frontend/js/modules/attendee/attendee.module');
-require('esn-frontend-common-libs/src/frontend/js/modules/http');
 require('esn-frontend-common-libs/src/frontend/js/modules/infinite-list/infinite-list.module');
 require('esn-frontend-common-libs/src/frontend/js/modules/core');
 require('esn-frontend-common-libs/src/frontend/js/modules/user/user.module');
@@ -34,24 +31,20 @@ require('esn-frontend-common-libs/src/frontend/js/modules/header/header');
 require('esn-frontend-common-libs/src/frontend/js/modules/i18n/i18n.module');
 require('esn-frontend-common-libs/src/frontend/js/modules/lodash-wrapper');
 require('esn-frontend-common-libs/src/frontend/js/modules/async-action');
-require('esn-frontend-common-libs/src/frontend/js/modules/member');
 require('esn-frontend-common-libs/src/frontend/js/modules/esn.router');
 
+require('./esn.group.libs/app.module');
 require('./admin/admin-groups-menu-item.component');
 require('./admin/admin-groups-subheader.component');
 require('./admin/admin-groups.component');
 require('./admin/admin.routes');
 require('./admin/admin.run');
-require('./attendee/group.attendee-provider.service');
 require('./common/selection/group-selection.service');
 require('./common/selection/group-selectable.directive');
 require('./common/selection/group-selection-hide-on-selecting.directive');
 require('./common/selection/group-selection-select-all.component');
 require('./common/selection/group-selection-select-all.controller');
-require('./common/group-api-client.service');
 require('./common/group-application-menu.directive');
-require('./common/group-member-resolver.service');
-require('./common/group-restangular.service');
 require('./common/group.service');
 require('./create/group-create.controller');
 require('./display/subheader/group-display-subheader.component');

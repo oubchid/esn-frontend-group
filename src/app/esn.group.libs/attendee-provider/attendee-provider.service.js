@@ -2,7 +2,7 @@
 
 require('../app.constants.js');
 
-angular.module('linagora.esn.group')
+angular.module('esn.group.libs')
   .factory('groupAttendeeProvider', groupAttendeeProvider);
 
 function groupAttendeeProvider(GROUP_OBJECT_TYPE) {

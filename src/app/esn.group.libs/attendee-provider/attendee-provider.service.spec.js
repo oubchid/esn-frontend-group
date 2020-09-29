@@ -8,7 +8,7 @@ describe('The groupAttendeeProvider service', function() {
   var groupAttendeeProvider, GROUP_OBJECT_TYPE;
 
   beforeEach(function() {
-    angular.mock.module('linagora.esn.group');
+    angular.mock.module('esn.group.libs');
 
     angular.mock.inject(function(_groupAttendeeProvider_, _GROUP_OBJECT_TYPE_) {
       groupAttendeeProvider = _groupAttendeeProvider_;

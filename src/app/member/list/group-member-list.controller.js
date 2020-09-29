@@ -2,7 +2,7 @@
 
 const _ = require('lodash');
 
-require('../../common/group-api-client.service.js');
+require('../../esn.group.libs/api-client/api-client.service');
 require('../../app.constants.js');
 
 angular.module('linagora.esn.group')

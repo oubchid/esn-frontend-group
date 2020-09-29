@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('linagora.esn.group')
+angular.module('esn.group.libs')
 
   .factory('groupRestangular', function(Restangular, httpErrorHandler) {
     return Restangular.withConfig(function(RestangularConfigurer) {
