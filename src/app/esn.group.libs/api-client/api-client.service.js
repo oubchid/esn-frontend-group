@@ -1,8 +1,8 @@
 'use strict';
 
-require('./group-restangular.service.js');
+require('../restangular/restangular.service');
 
-angular.module('linagora.esn.group')
+angular.module('esn.group.libs')
   .factory('groupApiClient', groupApiClient);
 
 function groupApiClient(groupRestangular) {

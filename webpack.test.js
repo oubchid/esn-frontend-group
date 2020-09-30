@@ -81,7 +81,8 @@ module.exports = {
         test: /\.run.js$/,
         loader: 'ignore-loader',
         include: [
-          path.resolve(__dirname, 'src/app/app.run.js')
+          path.resolve(__dirname, 'src/app/app.run.js'),
+          path.resolve(__dirname, 'src/app/esn.group.libs/app.run.js')
         ]
       }
     ]

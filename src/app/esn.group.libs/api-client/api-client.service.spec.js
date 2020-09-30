@@ -4,7 +4,7 @@ describe('The groupApiClient service', function() {
   var $httpBackend;
   var groupApiClient, groupId;
 
-  beforeEach(angular.mock.module('linagora.esn.group'));
+  beforeEach(angular.mock.module('esn.group.libs'));
 
   beforeEach(function() {
     groupId = '123';

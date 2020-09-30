@@ -16,7 +16,7 @@ describe('The groupMemberResolverService service', function() {
   });
 
   beforeEach(function() {
-    angular.mock.module('linagora.esn.group');
+    angular.mock.module('esn.group.libs');
     angular.mock.module(function($provide) {
       $provide.value('groupApiClient', groupApiClient);
     });

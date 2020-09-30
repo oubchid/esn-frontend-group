@@ -1,8 +1,8 @@
 'use strict';
 
-require('./group-api-client.service.js');
+require('../api-client/api-client.service');
 
-angular.module('linagora.esn.group')
+angular.module('esn.group.libs')
   .factory('groupMemberResolverService', groupMemberResolverService);
 
 function groupMemberResolverService(groupApiClient) {
