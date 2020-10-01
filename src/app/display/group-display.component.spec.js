@@ -115,13 +115,13 @@ describe('The groupDisplay component', function() {
     expect(element.find('.members h2').html()).to.contain('(0/1)');
   });
 
-  it.skip('should open add members dialog when add button is clicked', function() {
+  it('should open add members dialog when add button is clicked', function() {
     var element = initComponent();
 
     element.find('[ng-click="$ctrl.onAddMembersBtnClick()"]').click();
 
     expect($modal).to.have.been.calledWith(sinon.match({
-      templateUrl: '/group/app/update/members/group-add-members.html',
+      template: require('../update/members/group-add-members.pug'),
       controller: 'GroupAddMembersController'
     }));
   });
